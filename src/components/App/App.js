@@ -19,13 +19,13 @@ function FeedbackAll() {
 
   const handleLeaveFeedback = option => {
     if (option === 'good') {
-      setGood(good => good + 1);
+      setGood(prevState => prevState + 1);
     }
     if (option === 'neutral') {
-      setNeutral(neutral => neutral + 1);
+      setNeutral(prevState => prevState + 1);
     }
     if (option === 'bad') {
-      setBad(bad => bad + 1);
+      setBad(prevState => prevState + 1);
     }
   };
 
